@@ -34,12 +34,12 @@ href='http://fonts.googleapis.com/css?family=Condiment'>
 
     <div class="modal1" >
          <div class='modal-text'>
-         <h1 class='modal1-title'>Popular Running Routes in Cville </h1>
+         <h1 class='modal1-title'>Rental places in walkble distance for A-school students </h1>
 
          <p class='modal-body'>
-          Use this map to check 20 popular running routes in Charlottesville! See the distance, elevation and location to decide where you can go for running. It's time to Ruunnn!!!
+          Use this map to check all possible rental spaces in 10, 20, 25 min walking distance to UVA A-school! It's time to walk to school!!!
          </p>
-                    <div id='modal1-hint'><p> Click bear's paw to see!</p></div>
+                    <div id='modal1-hint' style= 'display:inline;'><p> Click for details!</p></div>
          </div>
     </div>
      <!-- Layers control (populated by javascript code) -->
@@ -49,7 +49,7 @@ href='http://fonts.googleapis.com/css?family=Condiment'>
   <div class='map-overlay'  id='info-window'>
     <div>
           <div style="height: 50px;">
-           <h2>Routes information</h2>
+           <h2>Rental information</h2>
            <button id="zoomin" class='button-zoom' >Go!</button>
            <button id="clear" class='button-clear' >CL</button>
           </div>
@@ -57,31 +57,23 @@ href='http://fonts.googleapis.com/css?family=Condiment'>
         <thead></thead>
         <tfoot></tfoot>
         <tbody>
-            <tr>
+            <tr style="margin-bottom: 20px">
                 <td style="vertical-align: top; width: 250px; height: auto; "> 
-                    <h4>Distance:</h4>
+                    <h4>Address:</h4>
                     <p style="margin-top: 10px;" class="notranslate">
-                        <span class="large_number" id="distance" style = "font-size:30px; color:#000;">3.1</span>
+                        <span class="large_number" id="address" style = "font-size:15px; color:#000;">n/a</span>
                         <span style="font-size: 12px; color: #fff; font-weight: 400; margin-left: 10px;">
-                            mi
+                        
                         </span>
                     </p>
                 </td>
 
-                <td style="border-left: 1px solid #fff; padding-left: 10px; vertical-align: top; width: 105px;">
-                    <h4>Elevation</h4>
-                        <span class="large_number" id="Elevation" style = "font-size:30px; color:#000;">3.1</span>
-                        <span style="font-size: 12px; color: #fff; font-weight: 400; margin-left: 10px;">
-                            ft
-                        </span>
+                <td style="border-left: 1px solid #fff; padding-left: 20 px; vertical-align: top; width: 300px;">
+                    <h4 style="padding-left:10px;">Details</h4>
+                        <span class="large_number" id="Info" style = "padding-left:10px; vertical-align: middle; font-size:15px; color:#000;">n/a</span>
                     </p>
                 </td>
 
-                <td style="border-left: 1px solid #fff; padding-left: 10px; vertical-align: top;">
-                    <h4>Created</h4>
-                    <p class="notranslate" id="Date" style="font-size: 15px;  color: #fff; font-weight: 400;"">08/29/2006</p>
-                    <div class="zoom"></div>
-                </td>
             </tr>
         </tbody>
     </table>
