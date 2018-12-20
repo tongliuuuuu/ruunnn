@@ -29,18 +29,7 @@ map.on('load', function() {
 });
 
 
-// for loop to create individual legend items
-for (i=0; i<layers.length; i++) {
-    var layer =layers[i]; // name of the current legend item, from the layers array
-    var color =colors[i]; // color value of the current legend item, from the colors array 
-    
-    var itemHTML = "<div><span class='legend-key'></span><span>" + layer + "</span></div>"; // create the HTML for the legend element to be added
-    var item = $(itemHTML).appendTo("#legend"); // add the legend item to the legend
-    var legendKey = $(item).find(".legend-key"); // find the legend key (colored circle) for the current item
-    legendKey.css("background", color); // change the background color of the legend key
-}
 
-// 10.25 starts here----------------------------------------------
 // INFO WINDOW CODE 
     // Create a popup on click 
     map.on('click', function(e) {   // Event listener to do some code when user clicks on the map
