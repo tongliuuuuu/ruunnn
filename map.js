@@ -29,25 +29,6 @@ map.on('load', function() {
 });
 
 
-// Legend
-var layers = [ // an array of the possible values you want to show in your legend
-    'Civic Spaces',
-    'Community Park',
-    'Neighborhood Park',
-    'Cemetery',
-    'Urban Park',
-    'Regional Park'
-];
-
-var colors = [ // an array of the color values for each legend item
-    '#800000',
-    '#800030',
-    '#800060',
-    '#80006c',
-    '#800090',
-    '#80009c'
-];
-
 // for loop to create individual legend items
 for (i=0; i<layers.length; i++) {
     var layer =layers[i]; // name of the current legend item, from the layers array
